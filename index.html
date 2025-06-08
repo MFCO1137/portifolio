@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu portfólio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Seu CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-black text-white m-0">
+
+  <!-- Centralização total -->
+  <div class="text-center py-4">
+    <img src="img/Foto perfil - alura.jpg" alt="minha foto" class="rounded-circle" width="150" height="150" />
+    <h1 class="lead">Eu sou Maria Fernanda</h1>
+    <h2>Eu gosto de fazer ginástica</h2>
+    <p>Fiz curso de Ginástica quando era menor e me apaixonei. Sou uma pessoa comunicativa e organizada.</p>
+    <p>Minhas habilidades:</p>
+    <div>
+      <p class="badge bg-secondary">Ginástica</p>
+      <p class="badge bg-secondary">Organização</p>
+      <p class="badge bg-secondary">Comunicar</p>
+    </div>
+  </div>
+
+  <main class="container mt-1">
+    <h2>Projetos de programação</h2>
+    <div class="row">
+      <!-- projeto 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/Projeto 1.jpg" class="card-img-top" alt="imagem do projeto de catálogo de vídeos com HTML e CSS" />
+          <div class="card-body">
+            <h5 class="card-title">Pingue-Pongue</h5>
+            <p class="card-text">Este projeto apresenta um jogo de Ping-Pong online. Foi feito no P5JS.</p>
+            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Modal1">veja o projeto</button>
+          </div>
+        </div>
+      </div>
+      <!-- Projeto 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/Projeto 2.jpg" class="card-img-top" alt="Arte interativa P5JS" />
+          <div class="card-body">
+            <h5 class="card-title">Jogo de corrida</h5>
+            <p class="card-text">Este projeto apresenta muitos emojis que se preparam para apostar corrida.Foi criado no P5JS. </p>
+            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Modal2">veja o projeto</button>
+          </div>
+        </div>
+      </div>
+      <!-- Projeto 3-->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/Projeto 3.jpg" class="card-img-top" alt="Quente e frio P5JS" />
+          <div class="card-body">
+            <h5 class="card-title">Recomendador de filmes</h5>
+            <p class="card-text">Este projeto apresenta uma séria de filmes para cada idade. Foi criado no P5JS.</p>
+            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#Modal3">veja o projeto</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- modal1 -->
+  <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="Modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-black text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Modal1Label">Pingue-Pongue</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p>O projeto foi feito com o P5JS. Com o objetivo de termos um acesso facilitado a um jogo tão famoso.</p>
+          <img src="img/Projeto 1.jpg" alt="Imagem representativa do projeto" class="w-50" />
+        </div>
+        <div class="modal-footer">
+          <a href="" class="btn btn-primary">Ver projeto ao vivo</a>
+          <a href="" class="btn btn-secondary">Ver código do projeto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal2 -->
+  <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="Modal2Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-black text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Modal2Label">Jogo de corrida</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p>O projeto foi feito com o P5JS. Com o objetivo de tentar automatizar jogos antigos.</p>
+          <img src="img/Projeto 2.jpg" alt="Imagem representativa do projeto" class="w-50" />
+        </div>
+        <div class="modal-footer">
+          <a href="" class="btn btn-primary">Ver projeto ao vivo</a>
+          <a href="" class="btn btn-secondary">Ver código do projeto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal3 -->
+  <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="Modal3Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-black text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Modal3Label">Recomendador de filmes</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p>O projeto foi feito por mim no P5JS. Com o objetivo seguir a classificação indicativa.</p>
+          <img src="img/Projeto 3.jpg" alt="Imagem representativa do projeto" class="w-50" />
+        </div>
+        <div class="modal-footer">
+          <a href="" class="btn btn-primary">Ver projeto ao vivo</a>
+          <a href="" class="btn btn-secondary">Ver código do projeto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ícones do Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Rodapé -->
+  <footer class="container py-5 text-center footer-fixo">
+    <h2>Entre em contato</h2>
+    <div>
+      <i class="bi bi-github"></i>
+      <a href="https://github.com/MFCO1137" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+    <p class="my-4">Copyright 2025. Produzido por Maria Fernanda Luz Mesquita</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
